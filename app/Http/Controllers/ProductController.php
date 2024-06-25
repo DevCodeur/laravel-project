@@ -55,14 +55,6 @@ class ProductController extends Controller  implements HasMiddleware
     public function store(StoreProductRequest $request)
     {
 
-
-    
-
-
-      $path = Storage::disk('public')->put('avatars', 
-        
-      $request->avatar);
-
       
         $product = new Product();
         
